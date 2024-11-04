@@ -9,13 +9,44 @@
 <body>
 
     <div class="calculadora">
+        
+        <!-- Pantalla -->
+        <div id="divPantalla"><input id="pantalla" type="text" readonly></div>
+        <!-- Botones -->
+         <div class="botones">
+            <input type="button" value="C" class="colorRojo" onclick="borrar()">
+            <input type="button" value="<<" class="color" onclick="borrarUno()">
+            <input type="button" value="%" class="color" onclick="porcentaje()">
+            <input type="button" value="/" class="color" onclick="mostrar('/')">
+         </div>
+        
+         <div class="botones">
+            <input type="button" value="7" onclick="mostrar('7')">
+            <input type="button" value="8" onclick="mostrar('8')">
+            <input type="button" value="9" onclick="mostrar('9')">
+            <input type="button" value="X" class="color" onclick="mostrar('*')">
+         </div>
 
-        <div class="pantalla"><input type="text" readonly></div>
+         <div class="botones">
+            <input type="button" value="4" onclick="mostrar('4')">
+            <input type="button" value="5" onclick="mostrar('5')">
+            <input type="button" value="6" onclick="mostrar('6')">
+            <input type="button" value="-" class="color" onclick="mostrar('-')">  
+         </div>
+        
+        <div class="botones">
+            <input type="button" value="1" onclick="mostrar('1')">
+            <input type="button" value="2" onclick="mostrar('2')">
+            <input type="button" value="3" onclick="mostrar('3')">
+            <input type="button" value="+" class="color" onclick="mostrar('+')">
+        </div>
 
-
-
-
-
+        <div class="botones">
+            <input type="button" value="+/-" onclick="cambiar('')">
+            <input type="button" value="0" onclick="mostrar('0')">
+            <input type="button" value="," onclick="mostrar('.')">
+            <input type="button" value="=" class="colorVerde" onclick="total()">
+        </div>
 
     </div>
 

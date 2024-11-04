@@ -7,20 +7,75 @@
     display: block;
     margin: 0 auto;
     margin-top: 50px;
-    width: 450px;
-    height: 550px;
-    border: 2px solid black;
+    width: 400px;
+    height: 540px;
+    background-color: black;
     text-align: center;
+    border-radius: 8px;
 }
 
-.pantalla{
+#divPantalla{
     display: block;
     padding: 10px;
-    
+    margin-bottom: 25px;
+    padding-right: 50px;
+    padding-left: 35px;
 }
 
-.pantalla > input[type="text"]{
+#divPantalla > input[type="text"]{
     width: 100%;
-    height: 50px;
-    
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    padding: 5px;
+    gap: 8px;
+    justify-content: center;
+}
+
+.botones > input[type="button"]{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 50%;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+
+.botones > input[type="button"]:hover{
+    background-color:#606060;
+}
+
+ .colorRojo{
+    color: red !important;
+    background-color: #606060 !important;
+}
+
+.color{
+    color: rgb(6, 252, 6) !important;
+    background-color: #606060 !important;
+}
+
+.colorVerde{
+    background-color: rgb(8, 209, 8) !important;
+}
+
+.colorRojo:hover, .color:hover {
+    background-color: #333 !important;
+}
+
+.colorVerde:hover{
+    background-color: green !important;
 }
