@@ -1,3 +1,5 @@
+'use strict'
+
 const pantalla = document.getElementById('pantalla');
 
 
